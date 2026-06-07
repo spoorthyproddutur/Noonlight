@@ -80,18 +80,20 @@ header {
 .logo-icon {
   width: 32px;
   height: 32px;
-  background: linear-gradient(135deg, var(--accent-pink), var(--accent-cyan));
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 10px rgba(255, 42, 109, 0.3);
 }
 
 .logo-icon svg {
-  width: 18px;
-  height: 18px;
-  fill: #fff;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease;
+}
+
+.logo-icon:hover svg {
+  transform: scale(1.12) rotate(3deg);
+  filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.6));
 }
 
 h1 {
